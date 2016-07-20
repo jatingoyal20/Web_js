@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background: #c0c0c9;
+    color: #333301;
+    font-size : 16px;
+}
+
+.clearfix:after {
+    content : '';
+    display : table;
+    clear: both;
+}
+
+.header {
+    padding: 30px 10px;
+}
+.header h1 {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.header-form {
+    background: white;
+    padding: 10px;
+    text-align: right;
+    max-width: 620px;
+    margin : 0 auto;
+}
+
+.note-title,
+.note-content {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    word-wrap: break-word;
+    background: transparent;
+    margin:0 0 10px;
+    outline : 0;
+    
+}
+
+.note-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.note-content {
+    resize : none;
+}
+
+.header-form button[type="submit"] {
+    float : right;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.note {
+    background: white;
+    padding : 10px;
+    margin: 0 auto 10px;
+    max-width: 200px;
+}
+
+@media only screen and (min-width: 630px) {
+    .note-container {
+        width: 630px;
+        margin : 0 auto;
+        
+        display : -webkit-box;
+        display : -ms-flexbox;
+        display : flex;
+        flex-flow: row wrap;
+    }
+
+    .note {
+        margin : 0 5px 10px;    
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    .note-container {
+        width: 840px;
+    }
+}
